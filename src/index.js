@@ -39,12 +39,12 @@ function Intro() {
 function SkillList() {
     return (
         <div className="skill-list">
-            <Skill name="HTML" bgColor="#ADD8E6" emote="strong" />
-            <Skill name="CSS" bgColor="#F0E68C" emote="strong" />
-            <Skill name="JavaScript" bgColor="#90EE90" emote="strong" />
-            <Skill name="React" bgColor="#FFA07A" emote="good" />
-            <Skill name="Node.js" bgColor="#ADD8E6" emote="stong" />
-            <Skill name="Express" bgColor="red" emote="baby" />
+            <Skill name="HTML+CSS" bgColor="#ADD8E6" emote="strong" />
+            <Skill name="JavaScript" bgColor="#F0E68C" emote="strong" />
+            <Skill name="Web Design" bgColor="#90EE90" emote="strong" />
+            <Skill name="Git and GitHub" bgColor="#FFA07A" emote="good" />
+            <Skill name="React" bgColor="#1E90FF" emote="strong" />
+            <Skill name="Svelte" bgColor="#FFA500" emote="baby" />
         </div>
     );
 }
