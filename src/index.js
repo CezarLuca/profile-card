@@ -18,7 +18,9 @@ function App() {
 }
 
 function Avatar() {
-    return <img src="Avatar.png" alt="profile" className="avatar" />;
+    return (
+        <img src="Avatar.png" alt="Profile Img Cezar Luca" className="avatar" />
+    );
 }
 
 function Intro() {
@@ -51,9 +53,8 @@ function SkillList() {
 
 function Skill(props) {
     const emote = props.emote;
-    const bgColor = props.bgColor;
     const style = {
-        backgroundColor: bgColor,
+        backgroundColor: props.bgColor,
     };
 
     let emoji;
