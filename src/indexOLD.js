@@ -73,32 +73,21 @@ function Intro() {
 
 function SkillList() {
     return (
-        <ul className="skill-list">
-            {skills.map((skill) => (
-                <Skill
-                    key={skill.name}
-                    name={skill.name}
-                    bgColor={skill.bgColor}
-                    emote={skill.emote}
-                />
-            ))}
-        </ul>
-
-        // <div className="skill-list">
-        //     <Skill name="HTML+CSS" bgColor="#ADD8E6" emote="strong" />
-        //     <Skill name="JavaScript" bgColor="#F0E68C" emote="strong" />
-        //     <Skill name="Web Design" bgColor="#90EE90" emote="strong" />
-        //     <Skill name="Git and GitHub" bgColor="#FFA07A" emote="good" />
-        //     <Skill name="React" bgColor="#1E90FF" emote="strong" />
-        //     <Skill name="Svelte" bgColor="#FFA500" emote="baby" />
-        // </div>
+        <div className="skill-list">
+            <Skill name="HTML+CSS" bgColor="#ADD8E6" emote="strong" />
+            <Skill name="JavaScript" bgColor="#F0E68C" emote="strong" />
+            <Skill name="Web Design" bgColor="#90EE90" emote="strong" />
+            <Skill name="Git and GitHub" bgColor="#FFA07A" emote="good" />
+            <Skill name="React" bgColor="#1E90FF" emote="strong" />
+            <Skill name="Svelte" bgColor="#FFA500" emote="baby" />
+        </div>
     );
 }
 
-function Skill({ name, bgColor, emote }) {
-    // const emote = props.emote;
+function Skill(props) {
+    const emote = props.emote;
     const style = {
-        backgroundColor: bgColor,
+        backgroundColor: props.bgColor,
     };
 
     let emoji;
@@ -119,7 +108,7 @@ function Skill({ name, bgColor, emote }) {
     return (
         <div className="skill" style={style}>
             <h3>
-                {name} {emoji}
+                {props.name} {emoji}
             </h3>
         </div>
     );
